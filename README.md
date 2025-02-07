@@ -1,7 +1,6 @@
 # MHsketch
-Sketch density reduction using MinHashing
-We present an efficient parallel algorithmic workflow, called JEM-mapper, that uses a new minimizer-based Jaccard estimator (or JEM) sketch to perform alignment-free mapping of long reads. We are able to implement and test this new multithreaded extension to the code (MPI+OpenMP multithreading). 
-![image](https://github.com/user-attachments/assets/e0df386c-64a4-4237-800d-648af513b4e1)
+Sketch density reduction using MinHashing: We present an efficient parallel algorithm MHsketch that uses MinHashing to reduce sketch density for long read mapping. We are able to implement and test this new multithreaded extension to the code (MPI+OpenMP multithreading). 
+![figParallelProcessing](https://github.com/user-attachments/assets/c2ffe14b-891e-407f-a804-0c71e14351b1)
 
 
 # Citation information:
@@ -10,7 +9,7 @@ Rahman, Tazin, Oieswarya Bhowmik, and Ananth Kalyanaraman. "An Efficient Paralle
 Rahman, Tazin, Oieswarya Bhowmik, and Ananth Kalyanaraman. "An Efficient Parallel Sketch-based Algorithmic Workflow for Mapping Long Reads." IEEE/ACM Transactions on Computational Biology and Bioinformatics (2024). https://ieeexplore.ieee.org/document/10755011#:~:text=10.1109/TCBB.2024.3489478
 
 # Dependencies:
-JEM-Mapper has the following dependencies:
+JEM-Alltoallc has the following dependencies:
 
 * MPI library (preferably MPI-3 compatible)
 * C++14 (or greater) compliant compiler
