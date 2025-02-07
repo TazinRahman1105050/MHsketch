@@ -1,5 +1,6 @@
 # MHsketch
 Sketch density reduction using MinHashing: We present an efficient parallel algorithm MHsketch that uses MinHashing to reduce sketch density for long read mapping. We are able to implement and test this new multithreaded extension to the code (MPI+OpenMP multithreading). 
+
 ![figParallelProcessing](https://github.com/user-attachments/assets/c2ffe14b-891e-407f-a804-0c71e14351b1)
 
 
