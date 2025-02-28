@@ -1,4 +1,4 @@
-// JEM-Mapper: A C++ implementation for Jaccard Estimate MinHash-based sequence-to-sequence mapping
+// MHsketch: A C++ implementation for Jaccard Estimate MinHash-based sequence-to-sequence mapping
 
 // Tazin Rahman, Oieswarya Bhowmik, Ananth Kalyanaraman
 
