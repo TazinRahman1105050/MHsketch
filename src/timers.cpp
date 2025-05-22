@@ -1,8 +1,8 @@
-// JEM-Mapper: A C++ implementation for Jaccard Estimate MinHash-based sequence-to-sequence mapping
+// MHsketch: A C++ implementation for Jaccard Estimate MinHash-based sequence-to-sequence mapping
 
-// Tazin Rahman, Oieswarya Bhowmik, Ananth Kalyanaraman
+// Tazin Rahman, Ananth Kalyanaraman
 
-//      (tazin.rahman@wsu.edu, oieswarya.bhowmik@wsu.edu, ananth@wsu.edu)
+//      (tazin.rahman@wsu.edu, ananth@wsu.edu)
 
 // Washington State University
 
@@ -32,6 +32,7 @@
 // WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE AND
 // ACCOMPANYING DOCUMENTATION, IF ANY, PROVIDED HEREUNDER IS PROVIDED "AS IS". WSU HAS NO
 // OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+//
 //
 
 #include <stdlib.h>
