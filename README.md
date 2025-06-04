@@ -33,14 +33,19 @@ mpiexec -np $number_of_procs $BINARY -s {Contig_Fasta_File} -q {Long_Read_Fasta_
 Input arguments 
 * -c: input contigs fasta file
 * -r: input long reads fasta file
-* -a: For diffent trials we have used a linear congruential hash funtion of the form: (Ax+B)%P, whwere A and B are integers and P is a prime and x is a kmer we want to hash. So, using this parameter, we provide the input values for different A values
-* -b: input B values
-* -p: input prime numbers
+* -a: input file for A values for linear congruential hash function of the form [(Ax+B)%P]
+* -b: input file for B values for linear congruential hash function of the form [(Ax+B)%P]
+* -p: input file for  prime numbers (P) for hash function  [(Ax+B)%P]
 * -l: read segment length
 * -t: number of trials
+* -m: sketching method you want ot use; it can be minimizer, or syncmer, or strobemer
+Optional arguments
+* -s: if you are using syncmer as the sketching method, then provide the s-size
+* -w: if you are using minimizer as the sketching method, then provide the window size; if you are using strobemer as sketching method, provide the w_min size
+* -v: if you are using strobemer as sketching method, provide the w_max size
 ```
 
-For example: if we want to run it on 8 threads and 4 processes:  
+For example, if we want to run it on 8 threads and 4 processes:  
 export OMP_NUM_THREADS=8  
 mpiexec -np 4 ./jem -s ~/Ecoli_reads_100x_contigs.fasta -q ~/Ecoli_reads_10x_long_reads.fasta -a ~/A.txt -b ~/B.txt -p ~/Prime.txt -r 1000 -T 30
 
