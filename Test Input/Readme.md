@@ -10,7 +10,7 @@ The basic usage is as follows where input_file is the input short read fasta fil
 To generate contigs from Minia assembler, we have used kmer-size as 32.
 
 
-# Generate long reads using Sim-it HiFi read simulatr:
+# Generate long reads using PBSIM3 simulatr:
 
-We have generated PacBio/ONT/HiFi long reads using PBSIM3 simulator ([https://github.com/ndierckx/Sim-it](https://github.com/yukiteruono/pbsim3)). 
+We have generated PacBio/ONT/HiFi long reads using the PBSIM3 simulator. 
 
