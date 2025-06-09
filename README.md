@@ -1,5 +1,5 @@
 # MHsketch
-Sketch density reduction using MinHashing: We present an efficient parallel algorithm MHsketch that uses MinHashing to reduce sketch density for long read mapping. We are able to implement and test this new multithreaded extension to the code (MPI+OpenMP multithreading). 
+MHsketch is a high-performance C++ framework for sketch density reduction in long-read mapping workflows. The algorithm of MHsketch is designed to use MinHashing to reduce sketch density for long read mapping. MHsketch supports multiple sketching methods—including minimizers, syncmers, and strobemers—making it flexible for a range of bioinformatics applications. We implemented and tested the multithread execution of the framework (MPI+OpenMP multithreading). 
 
 ![figParallelProcessing](https://github.com/user-attachments/assets/c2ffe14b-891e-407f-a804-0c71e14351b1)
 
