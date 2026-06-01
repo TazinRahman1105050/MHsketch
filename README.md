@@ -42,12 +42,12 @@ Input arguments
 Optional arguments
 * -s: if you are using syncmer as the sketching method, then provide the s-size
 * -w: if you are using minimizer as the sketching method, then provide the window size; if you are using strobemer as sketching method, provide the w_min size
-* -v: if you are using strobemer as sketching method, provide the w_max size
+* -v: if you are using strobemer as a sketching method, provide the w_max size
 ```
 
 For example, if we want to run it on 8 threads and 4 processes:  
 export OMP_NUM_THREADS=8  
-mpiexec -np 4 ./jem -s ~/Ecoli_reads_100x_contigs.fasta -q ~/Ecoli_reads_10x_long_reads.fasta -a ~/A.txt -b ~/B.txt -p ~/Prime.txt -r 1000 -T 30
+mpiexec -np 4 ./mhsketch -s ~/Ecoli_reads_100x_contigs.fasta -q ~/Ecoli_reads_10x_long_reads.fasta -a ~/A.txt -b ~/B.txt -p ~/Prime.txt -r 1000 -T 30
 
 Notes:
 * This code has been tested on high-performance computing cluster (HPC) with MPI compatibility. For the system we used we had to set the number of processes in the given way. Please change the parameters accordingly.
